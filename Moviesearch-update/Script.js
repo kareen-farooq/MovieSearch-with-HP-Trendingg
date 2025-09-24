@@ -97,7 +97,6 @@ async function loadTrending(time = "day") {
     const tv     = items.filter(i => i.media_type === "tv");
 
     trendingGrid.innerHTML = `
-      <!-- Movies Row -->
       <div class="col-span-full">
         <h3 class="text-xl font-bold mb-3 text-white">🎬 Movies</h3>
         <div class="flex gap-4 overflow-x-auto no-scrollbar pb-2">
@@ -105,7 +104,6 @@ async function loadTrending(time = "day") {
         </div>
       </div>
 
-      <!-- TV Row -->
       <div class="col-span-full mt-8">
         <h3 class="text-xl font-bold mb-3 text-white">📺 TV Series</h3>
         <div class="flex gap-4 overflow-x-auto no-scrollbar pb-2">
@@ -127,5 +125,6 @@ trendTabs.forEach(btn => {
 });
 
 loadTrending("day");
+
 
     
